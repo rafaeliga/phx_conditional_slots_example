@@ -1,0 +1,7 @@
+<PhxConditionalSlotsExample.Components.table rows={[%{name: "John", address: "Somewhere"}, %{name: "Jane", address: "Some place"}]}>
+  <%= if true do %>
+    <:col let={user} label="Address">
+      <p><%= user.address %></p>
+    </:col>
+  <% end %>
+</PhxConditionalSlotsExample.Components.table>
